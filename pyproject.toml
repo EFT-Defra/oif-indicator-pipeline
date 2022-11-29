@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "oif-indicator-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Ed Fawcett-Taylor <ed.fawcett-taylor@defra.gov.uk>"]
+readme = "README.md"
+packages = [{include = "oif_indicator_pipeline", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pandoc = "^2.3"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.2.0"
+pytest-datadir = "^1.4.1"
+
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.18.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
